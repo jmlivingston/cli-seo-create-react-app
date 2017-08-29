@@ -1,0 +1,22 @@
+{
+  "name": "cli-seo-create-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start-deploy": "npm run build-deploy && nodemon ./deploy/server/app.js",
+    "build-deploy": "node ./build.js",
+    "server-install": "cd server && npm install && cd .."    
+  },
+  "devDependencies": {
+    "fs-extra": "^4.0.1"
+  }
+}
