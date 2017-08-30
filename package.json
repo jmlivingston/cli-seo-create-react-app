@@ -12,9 +12,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-deploy": "npm run build-deploy && nodemon ./deploy/server/app.js",
-    "build-deploy": "node ./build.js",
-    "server-install": "cd server && npm install && cd .."    
+    "server-install": "cd server && npm install && cd ..",
+    "build-deploy": "node ./build.js",    
+    "start-deploy": "npm run build-deploy && nodemon ./deploy/server/app.js"
   },
   "devDependencies": {
     "fs-extra": "^4.0.1"
